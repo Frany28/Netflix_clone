@@ -1,0 +1,83 @@
+*{/* Tipografía de letra de toda la página */
+  font-family: 'Poppins', sans-serif; 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body{ /*colores del fondo y letras del body*/
+  color: white;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.6)), url(./img/header.jpg);
+  height: 100vh;
+  width: 100%;
+}
+
+nav{
+  display: flex; /* Hago que el contenido del nav sea horizontal en vez de vertical ajustándolas */
+  justify-content:center; /*mueve los elementos de forma de fila o horizontal*/
+  align-items:center; /*mueve los elementos de forma columna o vertical*/
+  gap: 700px; /*colocarle margen a cada parrafo y no individualmente*/
+  padding: 10px 0; /* Para arriba y abajo 10px y para derecha e izquierda 0% */
+}
+
+.inicio{
+  border: 0;
+  outline: 0;
+  background: rgb(219, 0, 1); /* Color de los botones */
+  color: white; /* Color de la letra los botones */
+  font-size: 12px; /* Tamaño de letra de los botones */
+  font-weight: bold;
+  border-radius: 4px; /* Redondea las esquinas para que sean cuadrados redondeados */
+  padding: 8px 20px;
+  margin-left: 8px; /* Hacemos que haya un espacio entre los botones */
+  cursor: pointer;
+}
+
+.idioma{
+  color: white;
+  display: inline-flex; /* Hace que se alineen los elementos (verticalmente) del botón a la misma altura en el centro */
+  align-items: center; /* Alineamos horizontalmente el texto y la imagen en el centro del botón */
+  background: rgba(0, 0, 0, 0.405); /* Hacemos que no tenga color el botón y que por defecto sea negro como el fondo */
+  border: 1px solid white;
+  padding: 5px 20px;
+  gap: 5px;
+  border-radius: 4px;
+}
+
+
+.contenido-headder h1{
+  font-size: 60px;
+  font-weight: 600;
+  max-width: 650px; /* Hace que la letra no pueda ser más ancha que el valor establecido: 650px */
+  line-height: 70px; /* Establece la distancia de los otros textos */
+}
+.contenido-headder h3 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.user-email input{
+  flex: 1; /* Esto hace que crezca a medida que se amplia la ventana, es para el diseño responsive */
+  border: 0;
+  outline: 0;
+  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0.678);
+  border: 1px solid white;
+}
+
+.user-email button{
+  background-color: rgb(219, 0, 1);
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 16px;
+  padding: 15px 30px; /* Centramos el texto */
+  cursor: pointer;
+}
+
+
